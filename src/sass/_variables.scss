@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+// Extra small screen / iPhone SE (or older)
+$screen-xs: 321px;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm: 768px;
+$screen-sm-min: $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet: $screen-sm-min !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md: 992px !default;
+$screen-md-min: $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop: $screen-md-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg: 1200px !default;
+$screen-lg-min: $screen-lg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop: $screen-lg-min !default;
+
+//== Media Queries
+$mq-xs: 'screen and (min-width: #{$screen-xs})';
+$mq-sm: 'screen and (min-width: #{$screen-sm})';
+$mq-md: 'screen and (min-width: #{$screen-md})';
+$mq-lg: 'screen and (min-width: #{$screen-lg})';
+
+$mq-xs-only: 'screen and (max-width: $screen-xs)';
+$mq-sm-only: 'screen and (min-width: $screen-xs) and (max-width: $screen-md)';
+$mq-md-only: 'screen and (min-width: $screen-md) and (max-width: $screen-lg)';
+
+$white: #FFFFFF;
+$black: #000000;
+$hover-color: #eee;
+
+$selection-color: #6699CC;
+$selectable-text-color: #2a1abe;
+$primary-text-color: $black;
+$input-text-color: #757575;
+$input-border-color: #757575;
+$price-color: #6699cc;
+$clear-color: #FA9595;
+
+$container-spacing: 10px;
+$sub-element-spacing: 5px;
+
+$svg-cross-full: "data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23bc081c' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm5.4 14.9l-.8.8-4.6-4.8-4.6 4.8-.8-.8 4.6-4.8-4.6-4.8.8-.8 4.6 4.8 4.6-4.8.8.8-4.6 4.8 4.6 4.8z'/%3E%3C/svg%3E";
+$svg-check-mark: "data:image/svg+xml,%3csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill='%2300838f' d='M6.8 13.905l-3.5-3.5a.984.984 0 0 0-1.4 0 .984.984 0 0 0 0 1.4l4.19 4.19c.39.39 1.02.39 1.41 0l10.6-10.59a.984.984 0 0 0 0-1.4.984.984 0 0 0-1.4 0l-9.9 9.9z'/%3e%3c/svg%3e";
+$svg-arrow-down: "data:image/svg+xml,%3csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12 17.65L24 6 12 17.65 0 6l12 11.65zm0 0l-.36.35.36-.35.36.35-.36-.35z' stroke='%2300838F' stroke-width='2' stroke-linecap='square'/%3e%3c/svg%3e";
+$svg-arrow-up: "data:image/svg+xml;charset=utf-8,%3Csvg fill='%2300838f' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 637.5 354.5'%3E%3Ctitle%3Eicons/system/basic/arrow-up/black%3C/title%3E%3Cpath d='M0 318.7l35.7 35.7 283-283 283.1 283.1 35.7-35.7L318.7 0 283 35.7z'/%3E%3C/svg%3E";
+$svg-bin: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M96.1 11.6l-29.5-.1V4.1c0-1.2-.5-2.4-1.3-3.3-.9-.9-2-1.3-3.2-1.4H38.3C37-.6 35.9-.1 35 .7c-.9.9-1.3 2-1.4 3.2v7.4l-29.5.1c-1.1 0-2 .9-2 2s.9 2 2 2h9.1L19 99.9l61.7.1L87 15.6h9.1c1.1 0 2-.9 2-2s-.9-2-2-2zm-58.5-.1V4.1c0-.2.1-.3.2-.4s.2-.2.4-.2H62c.2 0 .3.1.4.2.1.1.2.2.2.4v7.4h-25zM77.1 96H22.8l-5.6-80 65.7.1L77.1 96z'/%3E%3Cpath d='M34.5 85.5h.1c1.1-.1 2-1 1.9-2.1l-3-57c-.1-1.1-1-2-2.1-1.9-1.1.1-2 1-1.9 2.1l3 57c.1 1.1.9 1.9 2 1.9zM50.5 87c1.1 0 2-.9 2-2V26c0-1.1-.9-2-2-2s-2 .9-2 2v59c0 1.1.9 2 2 2zM65.4 85.5h.1c1.1 0 1.9-.8 2-1.9l3-57c.1-1.1-.8-2-1.9-2.1-1.1-.1-2 .8-2.1 1.9l-3 57c-.1 1.1.8 2 1.9 2.1z'/%3E%3C/svg%3E";
+$svg-search: "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='m511 483l-198-197c24-31 39-68 39-109 0-96-78-177-177-177-98 0-174 81-174 177 0 96 78 176 177 176 42 0 78-15 109-39l198 198z m-468-306c0-76 62-135 135-135 73 0 135 62 135 135 0 72-62 135-135 135-73 0-135-60-135-135z'/%3E%3C/svg%3E";
+

@@ -1,0 +1,40 @@
+@import '../../../../sass/_variables';
+
+.formInput {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: $container-spacing;
+
+  .select {
+    color: $input-text-color;
+    border: 1px solid $input-border-color;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: $container-spacing;
+    margin: 0 0 $container-spacing;
+    box-shadow: none;
+    overflow: hidden;
+    flex-grow: 2;
+    background-image: url($svg-arrow-down);
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: 97% center;
+    
+    select {
+      color: $input-text-color;
+      font-size: 16px;
+      padding: $sub-element-spacing 8px;
+      width: 130%;
+      border: none;
+      box-shadow: none;
+      background: transparent;
+      background-image: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

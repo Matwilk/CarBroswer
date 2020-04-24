@@ -1,0 +1,9 @@
+@import '../../../../sass/variables';
+
+.container {
+  padding: $container-spacing;
+
+  .results {
+    padding: 0 5px;
+  }
+}

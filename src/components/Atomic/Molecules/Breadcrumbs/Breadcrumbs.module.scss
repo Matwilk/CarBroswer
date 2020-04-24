@@ -1,0 +1,30 @@
+@import '../../../../sass/_variables';
+
+.container {
+  display: flex;
+  padding: $container-spacing;
+
+  .linkContainer {
+    display: flex;
+
+    .link {
+      padding: $sub-element-spacing;
+
+      a {
+        color: $selectable-text-color;
+        text-decoration: underline;
+      }
+    }  
+    
+    span {
+      transform: translateY(15%);
+      padding: 0 $container-spacing;
+    }
+  }
+
+  .selectedCrumb {
+    background-color: $selection-color;
+    border-radius: 3px;
+    padding: $sub-element-spacing $container-spacing;
+  }
+}

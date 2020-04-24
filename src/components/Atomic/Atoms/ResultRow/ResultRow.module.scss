@@ -1,0 +1,32 @@
+@import '../../../../sass/_variables';
+
+.resultRow {
+    border-bottom: 1px solid $input-border-color;
+    padding: $container-spacing;
+    height: 32px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    cursor: pointer;
+  }
+  
+  a {
+    display: flex;
+    text-decoration: none;
+  }
+
+  .resultRow:hover {
+    background-color: $hover-color;
+  }
+  
+  .resultRow img {
+    width: 32px;
+    height: 32px;
+    padding-right: $container-spacing;
+  }
+  
+  .resultRow .title {
+    top: -8px;
+  }
+  
+  .resultRow:hover .info {
+    display: inline-block;
+  }

@@ -1,0 +1,38 @@
+@import '../../../../sass/variables';
+
+.container {
+  position: relative;
+  padding: $container-spacing;
+
+  .inputBox {
+    position: relative;
+    padding: $container-spacing 8px;
+    width: 80%;
+    font-size: 18px;
+    border: 1px solid $input-border-color;
+    border-radius: 3px;
+  }
+
+  .clearButton {
+    border:1px solid transparent;
+    display: inline-block;
+    vertical-align: middle;
+    outline: 0;
+    width: 19px;
+    height: 19px;
+    position: relative;
+    background-color: $clear-color;
+    z-index:1;
+    right: 35px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 2px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    font-size: 12px;
+    cursor: pointer;
+  }
+}

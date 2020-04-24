@@ -1,0 +1,11 @@
+@import '../../../../sass/_variables';
+
+.combo {
+  display: flex;
+  padding: $container-spacing;
+
+  .input {
+    padding-left: $container-spacing;
+    flex: 2
+  }
+}
